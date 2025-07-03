@@ -12,11 +12,28 @@
             flex-direction: column;
             justify-content: space-between;
             font-family: Arial, sans-serif;
+            background-image: url('https://p4.wallpaperbetter.com/wallpaper/30/439/757/cat-feline-kitten-animal-wallpaper-preview.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
         }
 
         .content {
             text-align: center;
-            margin-top: 20px;
+            margin-top: auto;
+            margin-bottom: auto;
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.5); /* ทำให้พื้นหลังข้อความอ่านง่าย */
+            border-radius: 20px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .content h1 {
+            font-size: 3em;
+            margin: 0;
         }
 
         .footer {
@@ -24,16 +41,35 @@
             justify-content: center;
             gap: 20px;
             padding: 20px;
-            background-color: #f1f1f1;
+            background-color: rgba(255, 255, 255, 0.8);
         }
 
         .footer button {
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .footer button:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
+
+    <div class="content">
+        <h1>Welcome to HALOWW world</h1>
+    </div>
+
+    <div class="footer">
+        <button onclick="location.href='contact.html'">Contact</button>
+        <button onclick="location.href='about.html'">About</button>
+    </div>
+
 </body>
 </html>
