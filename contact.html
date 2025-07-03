@@ -7,7 +7,8 @@
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f4f4;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #f0f0f0;
       margin: 0;
       padding: 40px;
     }
@@ -15,20 +16,24 @@
     .container {
       max-width: 600px;
       margin: 0 auto;
-      background-color: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-      padding: 20px;
+      background-color: #1c1c1e;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+      padding: 30px;
     }
 
     h1 {
       text-align: center;
-      color: #333;
+      color: #ffffff;
+      margin-bottom: 30px;
+      font-size: 2em;
+      border-bottom: 2px solid #444;
+      padding-bottom: 10px;
     }
 
     .contact {
-      border-bottom: 1px solid #ddd;
-      padding: 10px 0;
+      border-bottom: 1px solid #444;
+      padding: 15px 0;
     }
 
     .contact:last-child {
@@ -37,11 +42,14 @@
 
     .name {
       font-weight: bold;
-      font-size: 1.2em;
+      font-size: 1.3em;
+      color: #00ffd5;
     }
 
-    .tel {
-      color: #555;
+    .tel, .gender, .age {
+      color: #ccc;
+      font-size: 1.05em;
+      margin-top: 4px;
     }
   </style>
 </head>
@@ -51,17 +59,23 @@
 
     <div class="contact">
       <div class="name">Chanidapha Lanon</div>
-      <div class="tel">Tel. 8888888888</div>
+      <div class="tel">Tel. 0960149823</div>
+      <div class="gender">Gender: Female</div>
+      <div class="age">Age: 19</div>
     </div>
 
     <div class="contact">
       <div class="name">Nattawut Jantila</div>
-      <div class="tel">Tel. 7777777777</div>
+      <div class="tel">Tel. 0967303371</div>
+      <div class="gender">Gender: Male</div>
+      <div class="age">Age: 19</div>
     </div>
 
     <div class="contact">
       <div class="name">Siranat Sibura</div>
-      <div class="tel">Tel. 6666666666</div>
+      <div class="tel">Tel. 0886235414</div>
+      <div class="gender">Gender: Male</div>
+      <div class="age">Age: 19</div>
     </div>
   </div>
 </body>
