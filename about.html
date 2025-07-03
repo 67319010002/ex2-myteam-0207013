@@ -3,13 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Profile Page</title>
+  <title>Profiles Together</title>
   <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+      margin: 0; padding: 0; box-sizing: border-box;
       font-family: 'Prompt', sans-serif;
     }
 
@@ -17,21 +15,37 @@
       background: linear-gradient(135deg, #667eea, #764ba2);
       min-height: 100vh;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       color: white;
-      text-align: center;
       padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      max-width: 900px;
+      width: 100%;
+      justify-content: center;
+      margin-bottom: 30px;
     }
 
     .card {
       background: rgba(255, 255, 255, 0.1);
-      padding: 40px 30px;
+      padding: 30px 20px;
       border-radius: 20px;
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
       backdrop-filter: blur(10px);
-      max-width: 600px;
-      width: 100%;
+      width: 250px;
+      text-align: center;
+      transition: transform 0.3s;
+      cursor: default;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
     }
 
     .profile-img {
@@ -41,24 +55,20 @@
       border-radius: 50%;
       border: 4px solid white;
       box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-      margin-bottom: 20px;
+      margin-bottom: 15px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .name-block h1 {
-      font-size: 2rem;
-      margin-bottom: 10px;
+      font-size: 1.5rem;
       font-weight: 700;
-    }
-
-    .name-block h2, .name-block h3 {
-      font-size: 1.2rem;
-      font-weight: 400;
-      margin-bottom: 5px;
+      color: white;
     }
 
     .link-button {
       display: inline-block;
-      margin-top: 30px;
       padding: 12px 24px;
       background-color: #ffffff;
       color: #764ba2;
@@ -75,19 +85,30 @@
   </style>
 </head>
 <body>
-  <div class="card">
-    <!-- รูปจาก URL -->
-    <img src="https://i.imgur.com/AfFp7pu.png" alt="Profile Picture" class="profile-img">
-
-    <!-- ชื่ออยู่ใต้รูป -->
-    <div class="name-block">
-      <h1>Chanidapha Lanon</h1>
-      <h2>Natthawut Jantila</h2>
-      <h3>Siranat Sribura</h3>
+  <div class="container">
+    <div class="card">
+      <img src="https://media.discordapp.net/attachments/1390216178986778755/1390216393844330526/IMG_20250510_212121_287.webp?ex=68677369&is=686621e9&hm=526c29f451041f81c2c452b174a9c8b08607c0b4344280c0a11638cd1f2dafe1&=&format=webp&width=881&height=881" alt="Chanidapha" class="profile-img">
+      <div class="name-block">
+        <h1>Chanidapha Lanon</h1>
+      </div>
     </div>
 
-    <!-- ปุ่มลิงก์ -->
-    <a href="index.html" class="link-button">ไปยังหน้า Index</a>
+    <div class="card">
+      <img src="https://media.discordapp.net/attachments/1294143612774518814/1390216209852792973/9k.png?ex=6867733d&is=686621bd&hm=5c6af04eac5c20f699e3a8a0c826987d15d4ec5ffef64bb3458d0599b6c76bfa&=&format=webp&quality=lossless&width=661&height=881" alt="Natthawut" class="profile-img">
+      <div class="name-block">
+        <h1>Natthawut Jantila</h1>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://media.discordapp.net/attachments/1265345694093283450/1390216285299671080/IMG_20250429_162022_790.webp?ex=6867734f&is=686621cf&hm=9b7a8ee78ce3f840e0c765390e8921b703c1393b93fc6b74c99bdf8f5fdcc2e0&=&format=webp&width=495&height=881" alt="Siranat" class="profile-img">
+      <div class="name-block">
+        <h1>Siranat Sribura</h1>
+      </div>
+    </div>
   </div>
+
+  <!-- ปุ่มกลับไปหน้า index.html -->
+  <a href="index.html" class="link-button">กลับไปหน้า Index</a>
 </body>
 </html>
